@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DataChomper</title>
+</head>
+<body>
+  <h1 id="title">DataChomperBlarb</h1>
+  <p id="description">Feed hungry Blarb your data</p>
+  <form id="survey-form"> 
+    
+    <label id="name-label">Name<label/>
+    <input 
+    id="name"  
+    type="text" 
+    placeholder="ex. Freddy Fredrickson"
+    required
+    />
+  
+    
+    <label id="email-label">E-mail<label/>
+    <input 
+    id="email" 
+    type="email" 
+    placeholder="ex. fred@gmoil.com"
+    required
+    />
+  
+    <label id="number-label">Age<label/>
+    <input 
+    id="number"   
+    id="number-label" 
+    type="number" 
+    placeholder="85"
+    min="1"
+    max="99"
+    required
+    />
+  
+    <label id="car-label">Car<label/>
+    <select id="dropdown" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="volvo">Toyota</option>
+    <option value="volvo">Lotus</option>
+    </select>
+
+    <p></p>
+    
+    <label id="Diet">Diet<label/><br>
+    <input 
+    type="radio" 
+    id="food" 
+    name="food" 
+    value="food">
+    <label for="Meat">Meat</label><br>
+  
+    <input type="radio" 
+    id="css" 
+    name="food" 
+    value="CSS">
+    <label for="css">Vegetables</label><br>
+    
+    <input 
+    type="radio" 
+    id="vegetables" 
+    name="food" 
+    value="bread">
+    <label for="bread">Bread</label>
+
+    <br>
+    <br>
+
+    <input type="checkbox" id="hair" name="redHair"value="hair">
+    <label for="hair"> I have red hair</label><br>
+
+    <input type="checkbox" id="videoGames" name="videoGames"value="games">
+    <label for="videoGames"> I play video games</label><br>
+
+    <input type="checkbox" id="live" name="city"value="city">
+    <label for="live"> I live in a city</label><br>
+<br>
+    <p>Other personal information?</p>
+    <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your SSN, bank routing numbers here, cryptowallet personal keys here"
+          ></textarea>
+<br>
+
+    <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+
+</form>
+
+</body>
+
+</html>
