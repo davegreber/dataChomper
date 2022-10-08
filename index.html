@@ -5,27 +5,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <canvas id="gamecanvas" style= "display: block; margin: 0 auto;"></canvas>
     <div class="header">
         <h1 id="title">DataChomperBlarb</h1>
         <h2 id="description">Feed hungry Blarb your data</h2>
     </div>
 
     <form id="survey-form"> 
-        <label id="name-label">Name<label/>
+        <label id="name-label" class="form-control">Name<label/>
         <input 
         type="text" 
         placeholder="ex. Freddy Fredrickson"
         required
         id="name"  
         />
-    <label id="email-label">E-mail<label/>
+    <label id="email-label" class="form-control">E-mail<label/>
         <input 
         id="email" 
         type="email" 
         placeholder="ex. fred@gmail.com"
         required
     />
-    <label id="number-label">Age<label/>
+    <label id="number-label" class="form-control">Age<label/>
     <input 
         id="number"   
         id="number-label" 
@@ -35,7 +36,7 @@
         max="99"
         required
     />
-    <label id="car-label">Car<label/>
+    <label id="car-label" class="form-control">Car<label/>
     <select id="dropdown" name="cars">
         <option value="volvo">Volvo</option>
         <option value="volvo">Toyota</option>
@@ -62,7 +63,7 @@
         <label for="bread">Bread</label>
     <br>
     <br>
-    <p>These are special attributes which are extra nutritious for Blarb!!!</p>
+    <p>Below are special attributes which are extra nutritious for Blarb</p>
     <input 
         type="checkbox" 
         id="hair" 
@@ -86,18 +87,19 @@
     <br>
     <p>Other personal information?</p>
     <textarea
-            id="comments"
-            class="input-textarea"
-            name="comment"
-            placeholder="Enter your SSN, bank routing numbers here, cryptowallet personal keys here">
+        class="form-control"
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your SSN, bank routing numbers here, cryptowallet personal keys here">
     </textarea>
     <br>
 
     <button 
-    type="submit" 
-    id="submit" 
-    class="submit-button">
-    Submit
+        type="submit" 
+        id="submit" 
+        class="submit-button">
+        Submit
     </button>
 
 </form>
