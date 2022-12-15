@@ -7,11 +7,13 @@
 <body>
     <canvas id="gamecanvas" style= "display: block; margin: 0 auto;"></canvas>
     <div class="header">
-        <h1 id="title">DataChomperBlarb</h1>
-        <h2 id="description">Feed hungry Blarb your data</h2>
+        <h1 id="title">DataChomper.Blarb</h1>
+        <h2 id="description">Please Feed hungry Blarb your data</h2>
     </div>
 
     <form id="survey-form"> 
+        <p>Basic information? No big deal.</p>
+
         <label id="name-label" class="form-control">Name<label/>
         <input 
         type="text" 
@@ -41,35 +43,42 @@
         <option value="volvo">Volvo</option>
         <option value="volvo">Toyota</option>
         <option value="volvo">Lotus</option>
+        <option value="volvo">Buick</option>
     </select>
     <p></p>
-    <label id="Diet">Diet<label/><br>
+    <label id="Diet">Diet <em>(choose one)</em><label/><br>
     <input 
         type="radio" 
         id="food" 
         name="food" 
         value="food">
-    <label for="Meat">Meat</label><br>
+    <label for="Meat">Meats</label><br>
     <input type="radio" 
         id="css" 
         name="food" 
         value="CSS">
-    <label for="css">Vegetables</label><br>
+    <label for="css">Veges</label><br>
+    <input type="radio" 
+        id="css" 
+        name="food" 
+        value="CSS">
+    <label for="css">Pastes</label><br>
     <input 
         type="radio" 
         id="vegetables" 
         name="food" 
         value="bread">
-        <label for="bread">Bread</label>
+        <label for="bread">Breads</label>
     <br>
     <br>
-    <p>Below are special attributes which are extra nutritious for Blarb</p>
+    <p>Below are special attributes which have been deemed ultra nutritious for the Blarb:</p>
+    <p style="color: red;  ">*NOT REQUIRED FOR NUTRITION*</p>
     <input 
         type="checkbox" 
         id="hair" 
         name="redHair"
         value="hair">
-    <label for="hair"> I have red hair</label><br>
+    <label for="hair"> I have hair</label><br>
 
     <input 
         type="checkbox" 
@@ -85,15 +94,18 @@
         value="city">
     <label for="live"> I live in a city</label><br>
     <br>
-    <p>Other personal information?</p>
-    <textarea
+    <p>Additonal personal information:</p>
+    <input
+        type="text-area"
         class="form-control"
         id="comments"
         class="input-textarea"
         name="comment"
-        placeholder="Enter your SSN, bank routing numbers here, cryptowallet personal keys here">
-    </textarea>
-    <br>
+        placeholder=" Enter your SSN / bank routing numbers here" 
+        
+        >
+    </input>
+
 
     <button 
         type="submit" 
