@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap'); 
-* {
-    
-    padding: 0;
-}
 
 :root {
   --color-white: #f3f3f3;
@@ -111,3 +107,29 @@ form {
 
 }
 
+#thankyou {
+    background-color: rgb(247, 251, 179);
+    color: black;
+    font-size: small;
+    margin: 2 ;
+    padding: 3;
+    border: 5px solid #73AD21;
+}
+
+span {
+
+ 
+}
+
+#popup {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+  width: 500px;
+  height: 500px;
+  border: none;
+}
+
+img {
+    width: 100%;
+}

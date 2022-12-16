@@ -25,7 +25,7 @@ function toggleText() {
   
                 // Change the text on button to 
                 // 'Show More'
-                buttonText.innerHTML = "Show More";
+                buttonText.innerHTML = "Feed DataChomper";
             }
   
             // If the hidden portion is revealed,
