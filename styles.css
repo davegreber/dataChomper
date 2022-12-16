@@ -17,7 +17,7 @@ body {
     
     }
 
-div {
+.header {
     border: dashed rgba(243, 0, 0);
     background-color: rgba(16, 1, 1, 0.3);
     backdrop-filter: blur(10px);
@@ -69,9 +69,7 @@ em {
 }
 
 
-div {
-  
-  }
+
 
 form {
     background: var(--color-darkblue-alpha);
@@ -113,23 +111,58 @@ form {
     font-size: small;
     margin: 2 ;
     padding: 3;
-    border: 5px solid #73AD21;
+    border: 5px dashed #73AD21;
+    width: 400px;
+
 }
 
 span {
 
- 
 }
 
 #popup {
     position: fixed;
     z-index: 5;
     top: 0;
-  width: 500px;
-  height: 500px;
-  border: none;
+    right: 4;
+    width: 300px;
+    height: 10px;
+    border: none;
+    display: flexbox
 }
 
 img {
     width: 100%;
+    
+}
+
+#mail {
+    transform: rotate(0.02turn);
+    border: red dashed ;
+right: 0;
+left:0;
+}
+
+#chef {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 180px;
+transform: rotate(-0.02turn);
+}
+
+#hotdog {
+    position: fixed;
+    bottom: 20;
+    right: 0;
+width: 20rem;
+transform: rotate(-0.04turn);
+}
+
+#monster {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    transform: rotate(-0.04turn);
 }
