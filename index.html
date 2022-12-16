@@ -3,6 +3,7 @@
 <head>
     <title>DataChomper</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <canvas id="gamecanvas" style= "display: block; margin: 0 auto;"></canvas>
@@ -12,7 +13,7 @@
     </div>
 
     <form id="survey-form"> 
-        <p>Basic information? No big deal.</p>
+        <p>Basic information? You got this.</p>
 
         <label id="name-label" class="form-control">Name<label/>
         <input 
@@ -28,6 +29,13 @@
         placeholder="ex. fred@gmail.com"
         required
     />
+    <label id="ssn-label" class="form-control">SSN<label/>
+        <input 
+        type="text" 
+        placeholder="xxx-xx-xxxx"
+        required
+        id="name"  
+        />
     <label id="number-label" class="form-control">Age<label/>
     <input 
         id="number"   
@@ -45,6 +53,13 @@
         <option value="volvo">Lotus</option>
         <option value="volvo">Buick</option>
     </select>
+    <label id="car-label" class="form-control">Mother's Maiden Name<label/><br>
+        <select id="dropdown" name="cars">
+            <option value="volvo">Smith</option>
+            <option value="volvo">Wallace-Shuster</option>
+            <option value="volvo">Fox</option>
+            <option value="volvo">Turlington</option>
+        </select>
     <p></p>
     <label id="Diet">Diet <em>(choose one)</em><label/><br>
     <input 
@@ -71,8 +86,9 @@
         <label for="bread">Breads</label>
     <br>
     <br>
-    <p>Below are special attributes which have been deemed ultra nutritious for the Blarb:</p>
-    <p style="color: red;  ">*NOT REQUIRED FOR NUTRITION*</p>
+    <p>Have more data? No worries. <br>
+        We also provide these questions:</p>
+    <p style="color: red;  ">* NOT REQUIRED BY LAW*</p>
     <input 
         type="checkbox" 
         id="hair" 
@@ -94,25 +110,34 @@
         value="city">
     <label for="live"> I live in a city</label><br>
     <br>
-    <p>Additonal personal information:</p>
+    <p>Still have additonal personal information? <br> You're the boss.</p>
     <input
         type="text-area"
         class="form-control"
         id="comments"
         class="input-textarea"
         name="comment"
-        placeholder=" Enter your SSN / bank routing numbers here" 
+        placeholder=" Enter bank routing numbers / crypto wallet seed phrases " 
         
         >
     </input>
 
-
+<!--
     <button 
         type="submit" 
         id="submit" 
         class="submit-button">
-        Submit
+        Submit Data to Blarb
     </button>
+-->
+    <button onclick="toggleText()" id="textButton">
+        Feed DataChomper
+    </button>
+    <span id="points">...</span>
+    
+    <span id="moreText"> 
+        <img src="/images/datachomper2.jpg" alt="datachomper_portrait">
+    </span>
 
 </form>
 </body>
